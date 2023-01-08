@@ -16,59 +16,153 @@
 
 <body>
     <nav>
-        <div></div>
-        <div class="searchbar-container"></div>
-        <div></div>
+        <!-- YT logo and hamburger -->
+        <div>
+            <i class="las la-bars"></i>
+            <div class="logo">
+                <i class="lab la-youtube"></i>
+                <h2>YouTube</h2>
+            </div>
+        </div>
+
+        <div class="searchbar-container">
+            <form action="/">
+                <input type="text" name="searchbar" id="searchbar" placeholder="Search">
+                <button><i class="las la-search"></i></button>
+            </form>
+            <button class="nav-btn voice-srch">
+                <i class="las la-microphone"></i>
+            </button>
+        </div>
+
+        <!-- Nav Actions -->
+        <div>
+            <button class="nav-btn"><i class="las la-video"></i></button>
+            <button class="nav-btn"><i class="las la-bell"></i></button>
+            <button class="nav-btn"><img src="" alt=""></button>
+        </div>
     </nav>
 
     <!-- Main content of the page -->
     <main>
 
         <!-- Main video + comment section -->
-        <div>
-            <section class="video"></section>
-            <section class="video-info">
-                <h2>Dummy Text</h2>
-                <div class="vid-actions"></div>
-                <div class="vid-details"></div>
+        <div class="main-content">
+            <section class="video">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/y2ECgOhoDGs"
+                    title="Synthwave Cyberpunk Mixtape | Volume One" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </section>
+
+            <!-- Vid Title + action buttons -->
+            <section class="video-info">
+                <h2>Synthwave Cyberpunk Mixtape | Volume One</h2>
+                <div class="vid-actions">
+                    <div class="channel">
+                        <div class="profile-pic"><img src="" alt=""></div>
+
+                        <div class="channel-meta">
+                            <h4>MrSuicideSheep</h4>
+                            <p>12.8M subscribers</p>
+                        </div>
+
+                        <button class="vid-act-btn">Subscribe</button>
+                    </div>
+
+                    <div>
+                        <div>
+                            <a href="" class="vid-act-btn alt-l"><i class="las la-thumbs-up"></i> 67K</a>
+                            <a href="" class="vid-act-btn alt-r"><i class="las la-thumbs-down"></i></a>
+                        </div>
+                        <a href="" class="vid-act-btn"><i class="las la-share"></i> Share</a>
+                        <a href="" class="vid-act-btn"><i class="las la-download"></i> Download</a>
+                        <a href="" class="vid-act-btn"><i class="las la-cut"></i> Clip</a>
+                        <a href="" class="vid-act-btn"><i class="las la-plus-square"></i> Save</a>
+                        <a href="" class="vid-act-btn"><i class="las la-ellipsis-h"></i></a>
+                    </div>
+                </div>
+
+                <!-- Video Details -->
+                <div class="vid-details">
+                    <h4>2.4M views 1 year ago</h4>
+                    <p>Synthwave Cyberpunk Playlist on Spotify: <a
+                            href="https://mrsuicidesheep.com/synthwave">https://mrsuicidesheep.com/synthwave</a>
+                    </p>
+                    <p>Show more</p>
+                </div>
+            </section>
+
+            <!-- Commments Section -->
             <section class="comments-section">
                 <div class="comm-actions">
-
+                    <p>1,039 Comments</p>
+                    <p><i class="las la-sort-amount-down"></i> Sort by</p>
                 </div>
+
+                <!-- Add Comment box -->
                 <div class="comm-add">
-
+                    <div><img src="" alt=""></div>
+                    <div>
+                        <p>Add a comment...</p>
+                    </div>
                 </div>
-                <div class="displayed-comm">
 
+                <!-- List of displayed comments -->
+                <div class="displayed-comm">
+                    <div class="comm-container">
+                        <div class="profile-pic"><img src="" alt=""></div>
+
+                        <!-- Comment meta -->
+                        <div class="comm-meta">
+                            <div class="comm-name-date">
+                                <p>Lorem Ipsum</p>
+                                <span>1 month ago</span>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolorem iure facilis
+                                fugit, nulla explicabo quasi debitis pariatur at odit et autem blanditiis deleniti
+                                sunt.</p>
+
+                            <div>
+                                <button><i class="las la-thumbs-up"></i></button>
+                                <button><i class="las la-thumbs-down"></i></button>
+                                <span>Reply</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
 
         <!-- Little thumbnail images on the right -->
-        <div>
-            <section>
-                <span></span><span></span><span></span>
+        <div class="side-content-container">
+            <section class="tags">
+                <span>All</span>
+                <span>Synthwave</span>
+                <span>House Music</span>
+                <span>Listenable</span>
             </section>
 
-            <section>
+            <section class="side-content">
 
                 <div class="thumbnail-container">
                     <!-- Thumbnail img -->
-                    <div class="img-container">
-                        <img src="" alt="">
+                    <div class="thumbnail-img-container">
+                        <img src="https://i.ytimg.com/vi/hY02oEKfPfg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDuPIYaS3NRfCE5eEoiDPpe6TZ9mQ"
+                            alt="">
                     </div>
 
                     <!-- Thumbnail meta -->
                     <div class="thumbnail-meta">
-                        <h3>Dummy Text</h3>
+                        <h3>Synthwave Cyberpunk Mixtape | Volume Two</h3>
                         <div>
                             <div class="meta-text-up">
-                                <p></p>
+                                <p>MrSuicideSheep</p>
                             </div>
                             <div class="meta-text-down">
-                                <p></p>
-                                <p></p>
+                                <p>228K views</p>
+                                <p>3 weeks ago</p>
                             </div>
                         </div>
                     </div>
